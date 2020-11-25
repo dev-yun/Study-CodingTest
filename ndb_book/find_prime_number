@@ -1,3 +1,5 @@
+# 입력받은 M,N 두 수 사이의 모든 소수를 찾아 출력해야하는 문제 (M이상 N이하)
+
 import math
 
 m, n = map(int, input().split())
