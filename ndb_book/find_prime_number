@@ -14,7 +14,11 @@ for i in range(2, int(math.sqrt(n)) + 1):  # 여기가 핵심. (m, sqrt(n))가 �
 
 for i in range(m, n + 1):
   if data[i]:               # if True: 일때의 i값 print (if 뒤에 조건없이 써있으면 True일때 값을 묻는것임)
-    print(i, end= ' ')      # if data[i] == False: 면 범위내의 소수가 아닌값만 추출
+    print(i)      # if data[i] == False: 면 범위내의 소수가 아닌값만 추출
     
 '''input = 3 16
-   output = 3, 5, 7, 11, 13'''
+   output = 3
+            5
+            7
+            11
+            13'''
