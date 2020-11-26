@@ -5,7 +5,6 @@ n, m, k = map(int, input().split())
 data = list(map(int, input().split()))
 
 data = sorted(data)
-result = 0
 
 bundle = (data[-1] * k) + (data[-2])      # 가장큰수를 k번, 두번째로 큰수를 한번 더한값을 묶는다.
 
