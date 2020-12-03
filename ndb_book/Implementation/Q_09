@@ -1,4 +1,5 @@
 # 2020 카카오 신입공채, 문자열압축문제
+# https://programmers.co.kr/learn/courses/30/lessons/60057
 
 def solution(s):
   answer = len(s)   # 마지막 min 비교를 위해 len(s) 대입
