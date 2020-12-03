@@ -29,3 +29,36 @@ for i in data_m:    # data_m을 하나씩 추출해서 비교
     print('yes', end=' ')
   else:
     print('no', end=' ')
+
+
+# 계수 정렬 방법
+
+n = int(input())
+array = [0] * 1000001
+
+for i in input().split():     # 가게에 있는 부품의 번호를 입력받아 array에 저장
+  array[int(i)] = 1
+  
+m = int(input())    # 손님의 부품개수
+data_m = list(map(int, input().split()))    # 손님이 확인 요청한 부품들 번호
+
+for i in data_m:
+  if array[i] == 1:
+    print('yes', end = ' ')
+  else:
+    print('no', end = ' ')
+    
+    
+# 집합 자료형을 이용한 방법
+
+n = int(input())
+array = set(map(int, input().split()))     # 가게에 있는 전체 부품 번호를 집합(set)자료형에 기록
+
+m = int(input())
+data_m = list(map(int, input().split()))
+
+for i in data_m:
+  if i in array:
+    print('yes', end = ' ')
+  else:
+    print('no', end = ' ')
