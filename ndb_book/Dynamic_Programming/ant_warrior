@@ -3,11 +3,10 @@
 n = int(input())
 array = list(map(int, input().split()))
 
-d = [0] * 100
+d = [0] * 100  # 3 <= n <= 100
 
 d[0] = array[0]
 d[1] = max(array[0], array[1])
 for i in range(2, n):
-  d[i] = max(d[i - 1], d[i - 2] + array[i])    # d[i]에 d[i-2]를 더해 d[i-1]와 비교해 큰값을 저장하는것을 반복해서 d[i]값을 업데이트한다.
-
+  d[i] = max(d[i - 1], d[i - 2] + array[i])    # 점화식 a(i) = max(a(i-1), a(i-2) + k(i))  (k(i) = i번째 위치의 값) (a(i)는 i번쨰 위치까지 최대가 되는 수들을 합한값)
 print(d[n-1])
